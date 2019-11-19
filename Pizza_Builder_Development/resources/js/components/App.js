@@ -47,6 +47,10 @@ class App extends React.Component {
                             <Home {...routeProps} />
                         )} />
 
+                        <Route path='/contact' render={( routeProps ) => (
+                            <Home {...routeProps} />
+                        )} />
+
                         <Route path='/magic' render={( routeProps ) => (
                             <Home {...routeProps} />
                         )} />

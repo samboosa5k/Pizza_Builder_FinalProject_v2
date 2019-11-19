@@ -57243,6 +57243,11 @@ function (_React$Component) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], routeProps);
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/contact",
+        render: function render(routeProps) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], routeProps);
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/magic",
         render: function render(routeProps) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], routeProps);
@@ -57369,7 +57374,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _customer_components_FrontPage_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./customer_components/FrontPage.jsx */ "./resources/js/components/customer_components/FrontPage.jsx");
 /* harmony import */ var _customer_components_Checkout_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./customer_components/Checkout.jsx */ "./resources/js/components/customer_components/Checkout.jsx");
 /* harmony import */ var _customer_components_About_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./customer_components/About.jsx */ "./resources/js/components/customer_components/About.jsx");
-/* harmony import */ var _ErrorBoundary_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ErrorBoundary.jsx */ "./resources/js/components/ErrorBoundary.jsx");
+/* harmony import */ var _customer_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./customer_components/Contact.jsx */ "./resources/js/components/customer_components/Contact.jsx");
+/* harmony import */ var _ErrorBoundary_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ErrorBoundary.jsx */ "./resources/js/components/ErrorBoundary.jsx");
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
@@ -57379,6 +57385,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -57448,6 +57455,12 @@ var Home = function Home(_ref) {
     path: "/about",
     render: function render(routeProps) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_customer_components_About_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], routeProps);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/contact",
+    render: function render(routeProps) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_customer_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], routeProps);
     }
   }))));
 };
@@ -59103,6 +59116,102 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/customer_components/Contact.jsx":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/customer_components/Contact.jsx ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var Contact = function Contact() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState2 = _slicedToArray(_useState, 2),
+      orderData = _useState2[0],
+      setOrderData = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    email: '',
+    ordernumber: ''
+  }),
+      _useState4 = _slicedToArray(_useState3, 2),
+      formValue = _useState4[0],
+      setFormValue = _useState4[1];
+
+  var handleSubmit = function handleSubmit() {
+    console.log('contact submit', 'submit');
+  };
+
+  var handleChange = function handleChange(event) {
+    var name = event.target.name;
+    var value = event.target.value;
+    var email = '';
+    var ordernumber = '';
+
+    if (name === 'email') {
+      ordernumber = formValue['ordernumber'];
+      email = value;
+    } else if (name === 'ordernumber') {
+      ordernumber = value;
+      email = formValue['email'];
+    }
+
+    setFormValue({
+      email: email,
+      ordernumber: ordernumber
+    });
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "splash-header"
+  }, "Contact..."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info-card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      width: "100%",
+      textAlign: "center"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    onSubmit: handleSubmit
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "admin-login__label",
+    htmlFor: "email"
+  }, "E-mail:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    id: "email",
+    name: "email",
+    onChange: handleChange
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "admin-login__label",
+    htmlFor: "ordernumber"
+  }, "Order Nr:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    id: "ordernumber",
+    name: "ordernumber",
+    onChange: handleChange
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit",
+    className: "btn btn-default admin-login__button"
+  }, "Submit")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
+
+/***/ }),
+
 /***/ "./resources/js/components/customer_components/FrontPage.jsx":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/customer_components/FrontPage.jsx ***!
@@ -59177,7 +59286,7 @@ var NavBar = function NavBar(_ref) {
   }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     className: "menu-customer__item",
     activeClassName: "menu-customer__item--active",
-    to: "/magic/contact"
+    to: "/contact"
   }, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu-customer__bottom"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_general_components_CornerCredits_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null))));

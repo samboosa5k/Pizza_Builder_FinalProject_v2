@@ -6,6 +6,7 @@ import BurgerBuilder from './builder/BurgerBuilder/BurgerBuilder.jsx';
 import FrontPage from './customer_components/FrontPage.jsx';
 import Checkout from './customer_components/Checkout.jsx';
 import About from './customer_components/About.jsx';
+import Contact from './customer_components/Contact.jsx';
 
 import ErrorBoundary from './ErrorBoundary.jsx';
 
@@ -49,6 +50,10 @@ const Home = ( { match } ) => {
 
                     <Route exact path='/about' render={( routeProps ) => (
                         <About {...routeProps} />
+                    )} />
+
+                    <Route exact path='/contact' render={( routeProps ) => (
+                        <Contact {...routeProps} />
                     )} />
 
                 </div>

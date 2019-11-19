@@ -24,6 +24,10 @@ Route::get('/about', function () {
     return view('index');
 });
 
+Route::get('/contact', function () {
+    return view('index');
+});
+
 Route::get('/magic', function () {
     return view('index');
 });

@@ -29,7 +29,7 @@ const NavBar = ( { match } ) => {
                     <NavLink
                         className="menu-customer__item"
                         activeClassName="menu-customer__item--active"
-                        to='/magic/contact'>Contact</NavLink>
+                        to='/contact'>Contact</NavLink>
 
                 </div>
                 <div className="menu-customer__bottom">
